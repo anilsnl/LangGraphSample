@@ -4,31 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34ac334c-c4a5-4dc6-b4be-d87ce4342edd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/LangGraphSample.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_seeder/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_seeder/mongo_db_seeder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/chains/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/chains/answer_grader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/chains/generation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/chains/hallucination_grader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/chains/retrieval_grader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/chains/router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/graph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/graph_state.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/nodes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/nodes/retrieve.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="34ac334c-c4a5-4dc6-b4be-d87ce4342edd" name="Changes" comment="- gitignore update&#10;- init project&#10;- chains added&#10;- some nodes added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +22,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "anilsnl"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/anilsnl/LangGraphSample&quot;,
+    &quot;accountId&quot;: &quot;943ca163-e504-41e2-a656-fdf52163ae65&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -59,22 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "Python.mongo_db_seeder.executor": "Run",
-    "Python.retrieval_grader.executor": "Run",
-    "Python.router.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mongo_db_seeder.executor&quot;: &quot;Run&quot;,
+    &quot;Python.retrieval_grader.executor&quot;: &quot;Run&quot;,
+    &quot;Python.router.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/graph/chains" />
@@ -200,12 +189,45 @@
       <option name="presentableId" value="Default" />
       <updated>1724851054860</updated>
       <workItem from="1724851056200" duration="506000" />
-      <workItem from="1724853030102" duration="21452000" />
+      <workItem from="1724853030102" duration="23222000" />
     </task>
+    <task id="LOCAL-00001" summary="- init project&#10;- chains added&#10;- some nodes added">
+      <option name="closed" value="true" />
+      <created>1724931295335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724931295335</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- gitignore update&#10;- init project&#10;- chains added&#10;- some nodes added">
+      <option name="closed" value="true" />
+      <created>1724931360774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724931360774</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- init project&#10;- chains added&#10;- some nodes added" />
+    <MESSAGE value="- gitignore update&#10;- init project&#10;- chains added&#10;- some nodes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="- gitignore update&#10;- init project&#10;- chains added&#10;- some nodes added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LangGraphSample$main.coverage" NAME="main Coverage Results" MODIFIED="1724860024084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
