@@ -12,3 +12,5 @@ pytest==8.3.2
 pymongo==4.8.0
 motor==3.5.1
 langchain-core==0.2.35
+flask==3.0.3
+flask-swagger-ui==4.11.1
