@@ -14,7 +14,7 @@ class GradeHallucinations(BaseModel):
     )
 
 llm = ChatOpenAI(temperature="0.5", model="gpt-3.5-turbo")
-structured_output = llm.with_structured_output(RetrievalGrader)
+structured_output = llm.with_structured_output(GradeHallucinations)
 
 system_prompt = """
 You are an expert to grade the retrieval task with the LLM generated result and the retrieved documents.

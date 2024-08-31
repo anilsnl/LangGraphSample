@@ -7,12 +7,12 @@ class RetrievalGrader(BaseModel):
     Binary score for the retrieval task with the user's question and the retrieved documents
     """
 
-    binary_score: str = Field(
+    binary_score: bool = Field(
         ...,
-        description="The binary score for the retrieval task, return 'yes' if the documents are relevant to the question, 'no' otherwise"
+        description="The binary score for the retrieval task, return 'yes' (True) if the documents are relevant to the question, 'no' (False) otherwise"
     )
 
-llm = ChatOpenAI(temperature="0.5", model="gpt-3.5-turbo")
+llm = ChatOpenAI(temperature="0", model="gpt-3.5-turbo")
 structured_output = llm.with_structured_output(RetrievalGrader)
 
 system_prompt = """
@@ -23,7 +23,7 @@ Please provide a binary score for the retrieval task, return 'yes' if the docume
 retrieval_grader_prompt = ChatPromptTemplate.from_messages(
     [
         ("system", system_prompt),
-        ("human", "Retrieved documents : {retrieved_documents} \n Question : {question} "),
+        ("human", "Retrieved documents : {documents} \n Question : {question} "),
     ]
 )
 

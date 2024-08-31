@@ -13,7 +13,7 @@ class GradeAnswer(BaseModel):
     )
 
 llm = ChatOpenAI(temperature="0.5", model="gpt-3.5-turbo")
-structured_output = llm.with_structured_output(RetrievalGrader)
+structured_output = llm.with_structured_output(GradeAnswer)
 
 system_prompt = """
 You are an expert to grade the answer task with the LLM generated result and the user's question.

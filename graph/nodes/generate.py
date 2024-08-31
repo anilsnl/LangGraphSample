@@ -1,8 +1,8 @@
 from graph.chains.generation import generation_chain
-from graph.graph_state import GraphState
+from graph.graph_state import GraphStateStore
 from typing import Any, Dict
 
-def generate(state: GraphState) -> Dict[str, Any]:
+def generate(state: GraphStateStore) -> Dict[str, Any]:
     print("---Generate---")
 
     question = state["question"]

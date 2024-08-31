@@ -18,7 +18,10 @@ structured_output = llm.with_structured_output(QueryRouter)
 
 system_prompt = """
 You are a expert to route user questions to the right data source which can be either a vector store or the web.
-The documents that store the data are in the vector store are about adesso company  documents. For other questions, you can use the web.
+The documents that store the data are in the vector store are about company documents. 
+ These questions are about the company rules and policies, general employee information, salary and additional benefits lıke health insurance, food support, and other company-related information.
+ ,  and other company-related information.
+ For other questions, you can use the web.
 """
 
 route_prompt = ChatPromptTemplate.from_messages(
